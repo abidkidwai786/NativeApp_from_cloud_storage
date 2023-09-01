@@ -51,7 +51,7 @@ public class NativeAppFromCloudStorage {
         caps.setCapability("build", "Java Automation");
         caps.setCapability("name", "app testing");
         caps.setCapability("devicelog",true);
-        caps.setCapability("network",true);
+        caps.setCapability("network",false);
 
         //-----------------------------Test----------------------------------------
         AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("https://"+userName+":"+accessKey+"@mobile-hub.lambdatest.com/wd/hub"), caps);
